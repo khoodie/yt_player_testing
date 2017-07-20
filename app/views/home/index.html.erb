@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe id="player" type="text/html" width="0" height="0"
+        src="http://www.youtube.com/embed/<%=@id%>"
+        frameborder="0"></iframe>
+
+
+<h3><%=@videoname%>
+<button onclick="playVideo()">재생</button>
+<button onclick="pauseVideo()">일시정지</button>
+<button onclick="stopVideo()">멈춤</button>
+
+<form method="get" action="/search">
+    <input type="text" name="q">
+    <button type="submit">검색</button>
+</form>
+</h3>
+
+
+</body>
+</html>
